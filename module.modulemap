@@ -1,6 +1,11 @@
 module sqlite3 [system] {
-    header "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sqlite3.h"
+    header "/usr/include/sqlite3.h"
     link "sqlite3"
     export *
 }
 
+module sqlite3m [system] {
+    header "Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sqlite3.h"
+    link "sqlite3"
+    export *
+}
